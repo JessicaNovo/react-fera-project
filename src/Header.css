@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Padauk&display=swap");
+
+.banner {
+  width: 100%;
+}
+
+.band-name {
+  font-family: "Padauk", sans-serif;
+  font-weight: 100;
+  position: fixed;
+  z-index: 1;
+  margin-top: 30px;
+  margin-left: 60px;
+  color: #fffef0;
+  font-size: 60px;
+}
