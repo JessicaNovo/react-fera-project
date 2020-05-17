@@ -6,11 +6,12 @@
 
 .band-name {
   font-family: "Padauk", sans-serif;
+  font-size: 60px;
   font-weight: 100;
-  position: fixed;
+  letter-spacing: 10px;
+  position: absolute;
   z-index: 1;
   margin-top: 30px;
   margin-left: 60px;
   color: #fffef0;
-  font-size: 60px;
 }

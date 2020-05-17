@@ -1,0 +1,99 @@
+.Music {
+  display: block;
+  height: 450px;
+}
+
+.main__wrapper {
+  display: flex;
+  align-items: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card__wrapper {
+  width: 300px;
+  height: 100%;
+}
+
+.card__front img {
+  width: 300px;
+  height: 425px;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #fffef0;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.button__recado {
+  color: #dd5a30;
+}
+
+.button__cura {
+  color: #dda130;
+}
+
+.button__limbo {
+  color: #2b4e93;
+}
+
+.button__no-ar {
+  color: #0f8047;
+}
+
+.button--close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #fffef0;
+  color: #25221e;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.artwork__cura,
+.artwork__limbo,
+.artwork__no-ar {
+  margin-left: 10px;
+}
+
+.card__back {
+  width: 300px;
+  height: 425px;
+  margin-left: 10px;
+  margin-top: -20px;
+  color: #fffef0;
+}
+
+.card__back__recado {
+  background-color: #dd5a30;
+  margin-left: 0;
+  margin-top: -20px;
+}
+
+.card__back__cura {
+  background-color: #dda130;
+  margin-left: 10px;
+}
+
+.card__back__limbo {
+  background-color: #2b4e93;
+  margin-left: 10px;
+}
+
+.card__back__no-ar {
+  background-color: #0f8047;
+  margin-left: 10px;
+}

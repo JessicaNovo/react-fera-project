@@ -1,37 +1,41 @@
 import React from "react";
-import "./BandProfile.css";
-import bandslide1 from "./media/bandslide1.JPG";
-import bandslide2 from "./media/bandslide2.JPG";
-import bandslide3 from "./media/bandslide3.JPG";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+import bandslide1 from "../media/bandslide1.JPG";
+import bandslide2 from "../media/bandslide2.JPG";
+import bandslide3 from "../media/bandslide3.JPG";
+
 import { Carousel } from "react-responsive-carousel";
+import { Scrollbars } from "react-custom-scrollbars-better";
+
+import "./BandProfile.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function BandProfile() {
   return (
     <div className="BandProfile">
-      <div className="row">
-        <div className="col-6">
-          <Carousel
-            showThumbs={false}
-            showStatus={false}
-            transitionTime={1500}
-            autoPlay
-            interval={5000}
-            infiniteLoop
-            useKeyboardArrows
-          >
-            <div>
-              <img src={bandslide1} alt="banda foto 1" />
-            </div>
-            <div>
-              <img src={bandslide2} alt="banda foto 2" />
-            </div>
-            <div>
-              <img src={bandslide3} alt="banda foto 3" />
-            </div>
-          </Carousel>
-        </div>
-        <div className="col-6">
+      <div className="band__photos">
+        <Carousel
+          showThumbs={false}
+          showStatus={false}
+          transitionTime={1500}
+          autoPlay
+          interval={5000}
+          infiniteLoop
+          useKeyboardArrows
+        >
+          <div>
+            <img src={bandslide1} alt="banda foto 1" />
+          </div>
+          <div>
+            <img src={bandslide2} alt="banda foto 2" />
+          </div>
+          <div>
+            <img src={bandslide3} alt="banda foto 3" />
+          </div>
+        </Carousel>
+      </div>
+      <div className="band__description">
+        <Scrollbars style={{ height: 178 }}>
           <p>
             Os <strong>Fera</strong> são uma banda de rock alternativo baseada
             na Póvoa de Varzim. Em 2020 lançam o seu Extended Play de estreia
@@ -54,10 +58,10 @@ export default function BandProfile() {
             canções.
           </p>
           <small>
-            <strong>Fera</strong> estará disponível ao público apenas em edição
+            <strong>Fera</strong> está disponível ao público apenas em edição
             digital.
           </small>
-        </div>
+        </Scrollbars>
       </div>
     </div>
   );

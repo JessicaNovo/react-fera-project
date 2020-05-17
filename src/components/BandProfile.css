@@ -1,0 +1,13 @@
+.BandProfile {
+  height: 400px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.band__description {
+  margin: 20px 20px;
+}
+
+.control-arrow {
+  display: none;
+}

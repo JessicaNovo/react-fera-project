@@ -1,18 +1,17 @@
 import React from "react";
+
+import Header from "./components/Header";
+import Videoclip from "./components/Videoclip";
+import Main from "./components/Main";
+
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.css";
-import Header from "./Header";
-import BandProfile from "./BandProfile";
-import Videoclip from "./Videoclip";
-import Music from "./Music";
 
 export default function App() {
   return (
-    <div className="App container-fluid">
+    <div className="App">
       <Header />
-      <Music />
+      <Main />
       <Videoclip />
-      <BandProfile />
     </div>
   );
 }

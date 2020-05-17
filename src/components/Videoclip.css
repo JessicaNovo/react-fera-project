@@ -1,4 +1,6 @@
 .Videoclip {
+  display: block;
+  margin: 0 auto 20px;
   color: black;
   text-align: center;
   font-size: 100px;
